@@ -40,6 +40,9 @@
     .text-center {
         text-align: center;
     }
+    .form-control{
+        width:100%;
+    }
 </style>
 
 <body>
@@ -95,22 +98,35 @@
         </ol>
         <form action="/submit-cat-photo">
             <div class="row">
-                <div class="col-xs-6"> <label>
-                        <input type="radio" name="indoor-outdoor"> Indoor</label></div>
-                <div class="col-xs-6"><label>
-                        <input type="radio" name="indoor-outdoor"> Outdoor</label>
-                    <label></div>
-               
-                
+                <div class="col-xs-6">
+                    <label>
+                        <input class="form-control"type="radio" name="indoor-outdoor"> Indoor</label>
+                </div>
+                <div class="col-xs-6">
+                    <label>
+                        <input class="form-control"type="radio" name="indoor-outdoor"> Outdoor</label>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <label>
+                        <input class="form-control"type="checkbox" name="personality"> Loving</label>
+                </div>
+                <div class="col-xs-4">
+                    <label>
+                        <input class="form-control"type="checkbox" name="personality"> Lazy</label>
+                </div>
+                <div class="col-xs-4">
+                    <label>
+                        <input class="form-control"type="checkbox" name="personality"> Crazy</label>
+                </div>
             </div>
 
-            <input type="checkbox" name="personality"> Loving</label>
-            <label>
-                <input type="checkbox" name="personality"> Lazy</label>
-            <label>
-                <input type="checkbox" name="personality"> Crazy</label>
-            <input type="text" placeholder="cat photo URL" required>
-            <button type="submit">Submit</button>
+
+
+            <input class="form-control"type="text" placeholder="cat photo URL" required>
+            <button class="btn btn-primary"type="submit"><i class="fa fa-paper-plane"></i>Submit</button>
         </form>
     </div>
 
